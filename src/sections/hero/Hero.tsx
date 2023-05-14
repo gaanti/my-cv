@@ -35,7 +35,6 @@ function Hero() {
                                 e.preventDefault();
                                 contact &&
                                 contact.scrollIntoView({ behavior: "smooth", block: "start" });
-                                window.history.pushState("contactYou", "contactYou", "/contactYou");
                             }}
                 >Get in Touch</HeroButton>
             </HeroContent>
