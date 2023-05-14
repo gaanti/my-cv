@@ -18,6 +18,7 @@ export const HeroSection = styled.section`
   color: #ffffff;
   text-align: center;
   padding: 80px 0;
+  position: relative;
 `;
 
 export const HeroContent = styled.div`

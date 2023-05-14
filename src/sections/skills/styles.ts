@@ -8,8 +8,8 @@ padding: 80px 0;
 `;
 
 export const SkillContent = styled.div`
-                     max-width: 800px;
-margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 export const SkillTitle = styled.h2`

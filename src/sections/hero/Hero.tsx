@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
     HeroButton,
     HeroContent,
@@ -11,6 +11,12 @@ import {
 } from "./styles";
 
 function Hero() {
+    useEffect(() => {
+        let url = window.location.href.split("/");
+        let target = url[url.length - 1].toLowerCase();
+        let element = document.getElementById(target);
+        element && element.scrollIntoView({ behavior: "smooth", block: "start"});
+    }, []);
     return (
         <HeroSection>
             <HeroContent>
@@ -23,7 +29,15 @@ function Hero() {
                     CSS, SCSS, Styled components, MUI, and Springboot. I have worked on projects like React pizza and
                     DancePro, a management platform. I have 4 months of experience as a frontend developer at Lokaleo
                     and 7 months of experience on the DancePro project.</HeroDescription>
-                <HeroButton href="#contact">Get in Touch</HeroButton>
+                <HeroButton href="/"
+                            onClick={e => {
+                                let contact = document.getElementById("contactYou");
+                                e.preventDefault();
+                                contact &&
+                                contact.scrollIntoView({ behavior: "smooth", block: "start" });
+                                window.history.pushState("contactYou", "contactYou", "/contactYou");
+                            }}
+                >Get in Touch</HeroButton>
             </HeroContent>
         </HeroSection>
     );

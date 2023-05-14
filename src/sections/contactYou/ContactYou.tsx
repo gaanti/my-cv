@@ -3,7 +3,7 @@ import {ContactButton, ContactContainer, ContactForm, ContactInput, ContactTextA
 
 function ContactYou() {
     return (
-        <ContactContainer>
+        <ContactContainer id={'contactYou'}>
             <ContactTitle>Contact Me</ContactTitle>
             <ContactForm>
                 <ContactInput type="text" placeholder="Name" required />

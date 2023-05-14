@@ -11,7 +11,7 @@ import Footer from "./sections/footer/Footer";
 
 function App() {
     return (
-        <div className="App">
+        <div >
             <Hero/>
             <Skills/>
             <Projects/>

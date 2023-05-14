@@ -1,3 +1,4 @@
+@import-normalize;
 .hero-section {
   background: linear-gradient(to bottom right, #f8a5c2, #00ff7f);
   animation: subtle-pulse 10s ease infinite;
@@ -7,7 +8,10 @@
   width: 100vw;
   height: 100vh;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 @keyframes subtle-pulse {
   0% {
     opacity: 0.9;
@@ -20,5 +24,6 @@
   }
 }
 * {
+  font-family: Open Sans, system-ui;
   box-sizing: border-box;
 }

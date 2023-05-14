@@ -58,14 +58,14 @@ export const ProjectDescription = styled.p`
 
 export const Button = styled.a`
   display: inline-block;
-  background-color: #6b38fb;
-  color: #ffffff;
+  background-color: #00ff7f;
+  color: #000;
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: #4a1fad;
+    background-color: #19d375;
   }
 `;
