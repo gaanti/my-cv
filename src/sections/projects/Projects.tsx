@@ -21,7 +21,7 @@ function Projects() {
                     <ProjectInfo>
                         <ProjectTitle>React Pizza</ProjectTitle>
                         <ProjectDescription>A pizza ordering application built with React.</ProjectDescription>
-                        <Button href="#">View project</Button>
+                        <Button href="https://github.com/gaanti/Pizza-service">View project</Button>
                     </ProjectInfo>
                 </ProjectCard>
                 <ProjectCard>
@@ -29,7 +29,6 @@ function Projects() {
                     <ProjectInfo>
                         <ProjectTitle>DancePro</ProjectTitle>
                         <ProjectDescription>A management platform for dance studios.</ProjectDescription>
-                        <Button href="#">View project</Button>
                     </ProjectInfo>
                 </ProjectCard>
             </ProjectsWrapper>
